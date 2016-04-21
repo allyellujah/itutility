@@ -1,0 +1,64 @@
+section.blog {
+	margin: 0;
+	padding: 0;
+	padding-top: 10%;
+	.imgContainer {	
+		height: 300px;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+		}
+		h3 {
+			font-size: 2rem;
+			position: absolute;
+			bottom: 5%;
+			left: 5%;
+			z-index: 1;
+			padding: 10px;
+			background: $blue;
+			a {
+				padding: 10px;
+				color: $white;
+			}
+		}
+	}
+	.content {
+		padding: 1% 5% 5%;
+	} 
+}
+
+article.post {
+	padding-top: 120px;
+	.imgContainer {
+		height: 300px;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+	.entry-content {
+		padding: 0 5%;
+	}
+	footer {
+		background: none;
+		padding: 0 5%;
+		p {
+			color: $black;
+			float: left;
+			padding-right: 20px;
+		}
+	}
+}
+
+section.entry-content {
+	padding: 2% 0 0;
+}
+
+.wrapper.blog {
+	padding-top: 1%;
+}
+
+.navigation {
+	padding: 0 5%;
+}

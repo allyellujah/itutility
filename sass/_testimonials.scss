@@ -1,0 +1,52 @@
+.testimonials {
+	padding: 0;
+	padding-top: 10%;
+	padding-bottom: 5%;
+	background: url('images/polygon.jpg');
+	h2 {
+		padding-top: 20px;
+		color: $white;
+	}
+	.main-carousel {
+		width: 100%;
+		.carousel-cell {
+			width: 100%;
+			.card {	
+				width: 60%;
+				margin: 0 auto;
+				background-color: $white;
+				opacity: .8;
+				.img {
+					float: left;
+					width: 25%;
+					img {
+						padding: 10px;
+					}
+				}
+				blockquote {
+					float: left;
+					width: 70%;
+					margin: 0;
+					padding: 0;
+				}
+			}
+			.src {
+				padding-top: 20px;
+			}
+			.src, 
+			.company {
+				text-align: center;
+				color: $white;
+				margin: 0;
+			}
+		}
+		.flickity-prev-next-button {
+			display: none;
+		}
+		.flickity-page-dots {
+			.dot {
+				background: $white;
+			}
+		}
+	}
+}

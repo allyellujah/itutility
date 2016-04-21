@@ -1,0 +1,9 @@
+<?php get_template_part('mainHeader'); ?>
+  <?php get_template_part('slider'); ?>
+    <?php get_template_part('about') ?>
+    <?php get_template_part('products') ?>
+    <?php get_template_part('benefits') ?>
+    <?php get_template_part('testimonials') ?>
+    <?php get_template_part('blog');	?>
+    <?php get_template_part('contact') ?>
+<?php get_footer(); ?>

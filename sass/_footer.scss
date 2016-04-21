@@ -1,0 +1,16 @@
+footer {
+	background: $black;
+	color: $white;
+	margin: 0;
+	padding: 2%;
+	font-size: 1.2rem;
+	.wrapper {
+		padding-top: 0;
+	}
+	.copy {
+		float: left;
+	}
+	.top {
+		float: right;
+	}
+}

@@ -1,0 +1,37 @@
+section.benefits {
+	padding: 10% 0 0 0;
+	.description {
+		text-align: center;
+	}
+	.content {
+		float: left;
+		width: 65%;
+		padding-left: 4%;
+		.item {
+			padding: 1%;
+		}
+		.bullets {
+			color: $blue;
+			font-size: 1.6rem;
+			float: left;
+			width: 5%;
+			text-align: center;
+		}
+		.text {
+			float: left;
+			width: 95%;
+			h3, p {
+				margin: 0;
+			}
+			h3 {
+				font-size: 1.6rem;
+			}
+		}
+	}
+	.cloud {
+		float: left;
+		width: 35%;
+		display: block;
+		opacity: .8;
+	}
+}

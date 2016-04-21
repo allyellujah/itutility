@@ -1,0 +1,59 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	.filter {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2;
+			max-width: 100%;
+			transition: all 1s;
+			opacity: .8;
+		}
+	.wrap {
+		.logo {
+			height: 100%;
+			float: left;
+			width: 30%;
+			position: relative;
+			z-index: 3;
+			img {
+				display: block;
+				padding: 10px;
+			}
+		}
+		nav {
+			float: right;
+			width: 50%;
+			padding-top: 40px;
+			position: relative;
+			z-index: 3;
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li {
+					float: left;
+					text-align: center;
+					font-size: 1.6rem;
+					// width: calc(100% / 7);
+					padding-left: 20px;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+
+.scrolling {
+	background: $white;
+}
+
+.opacity {
+	opacity: .5;
+}

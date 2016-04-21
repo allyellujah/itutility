@@ -1,0 +1,99 @@
+/*
+* Theme Name: ITUtility
+* Theme URI: http://itutility.net;
+* Description: Custom WordPress theme based on Hostro PSD.
+* Version: 1.0
+* Author: Allye Vice
+* Author URI: http://allyevice.com
+*/
+
+/*
+=========
+Variables
+=========
+*/
+
+$font: 'Raleway', sans-serif;
+$bodyFont: 'PT Sans', sans-serif;
+$red: #D5382D;
+$blue: #333791;
+$black: #060709;
+$grey: #E0E0E0;
+$white: #fdfdfe;
+
+html {
+	font-size: 10px;
+	font-size: 62.5%;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: $black;
+	background: $white;
+	font-family: $font;
+	font-weight: 300;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 120px;
+}
+
+section {
+	padding: 10% 5% 0 5%;
+}
+
+body.page {
+	.wrapper {
+		padding: 120px 5%;
+	}
+	footer {
+		.wrapper {
+			padding: 2%;
+		}
+	}
+}
+
+article.page {
+	h3 {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+}
+
+article.benefits, article.contact {
+	display: none;
+}
+
+/*
+========
+Partials
+========
+*/
+
+@import 'normalize';
+@import 'typography';
+@import 'header';
+@import 'slider';
+@import 'about';
+@import 'products';
+@import 'benefits';
+@import 'testimonials';
+@import 'blog';
+@import 'comments';
+@import 'contact';
+@import 'footer';
+
+
+
+
+
+
+
+
