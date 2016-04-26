@@ -12,7 +12,7 @@
 <!-- dev credits: 
 Web Development: Allye Vice (allyevice.com)
 Design: Hostro Theme from Themeforest (themeforest.com)
-Font: Raleway from Google Fonts
+Fonts: Raleway (headers) and PT Sans (body) from Google Fonts
 Gears by Leonides Delgado for the Noun Project
 Smooth Scroll: Ariel Flesler
 Hero image slider and testimonial slider: Flickity - http://flickity.metafizzy.co/

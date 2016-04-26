@@ -1,20 +1,22 @@
-var itunApp = {};
+var itunApp = itunApp || {};
 
 $(function(){
 
 	console.log("It's working");
-	itunApp.nav();
-
+	itunApp.hamburger();
 });
 
-itunApp.nav = function() {
-	$(window).scroll(function(){
-		var scroll = $(window).scrollTop();
-
-		if (scroll >= 50) {
-			$('header .filter').addClass('scrolling');
-		} else if (scroll <= 50) {
-			$('header .filter').removeClass('scrolling');
-		}
+itunApp.hamburger = function(){
+	$('.hamburger').click(function(){
+		if($(this).hasClass('active')) {
+			$('.active').removeClass('active');
+	    	} else {
+	    		$(this).addClass('active');
+	    		$('nav').addClass('active');
+	    	}
 	});
+	$('nav ul li a').click(function(){
+		$('.active').removeClass('active');
+	});
+    
 }

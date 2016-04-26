@@ -15,21 +15,23 @@ ABOUT SECTION BEGINS
     <?php $about-> the_post(); ?>
     <h2><?php the_title(); ?></h2>
     <?php the_content(); ?>
-    <div class="mockupCont">
-      <?php $image = get_field('mockup_photo'); ?>
-      <img src="<?php echo $image['sizes']['large'] ?>" class="mockup" alt="ITUtility login page on a laptop">
-    </div><!-- .mockupCont -->
-    <div class="features clearfix">
-      <?php while(has_sub_fields('features')): ?>
-      <div class="feature clearfix">
-        <div class="content">
-          <h3><?php the_sub_field('title'); ?></h3>
-        <p><?php the_sub_field('short_desc'); ?></p>
-        </div><!-- .content -->
-        <img src="<?php bloginfo('template_url'); ?>/images/gears.png" alt="ITUtility gear icon" class="gears">
-      </div><!-- .feature -->
-      <?php endwhile; ?><!-- features -->
-    </div><!-- /.features -->
+    <div class="layout clearfix">
+      <div class="mockupCont">
+        <?php $image = get_field('mockup_photo'); ?>
+        <img src="<?php echo $image['sizes']['large'] ?>" class="mockup" alt="ITUtility login page on a laptop">
+      </div><!-- .mockupCont -->
+      <div class="features clearfix">
+        <?php while(has_sub_fields('features')): ?>
+        <div class="feature clearfix">
+          <div class="content">
+            <h3><?php the_sub_field('title'); ?></h3>
+          <p><?php the_sub_field('short_desc'); ?></p>
+          </div><!-- .content -->
+          <img src="<?php bloginfo('template_url'); ?>/images/gears.png" alt="ITUtility gear icon" class="gears">
+        </div><!-- .feature -->
+        <?php endwhile; ?><!-- features -->
+      </div><!-- /.features -->
+    </div><!-- .layout -->
     <div class="partner clearfix">
       <p><?php the_field('partnership_benefits'); ?></p>
       <a href="mailto:<?php the_field('email_to_join'); ?>"><button>Join our Partners</button></a>

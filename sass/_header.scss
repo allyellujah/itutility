@@ -13,7 +13,8 @@ header {
 			z-index: 2;
 			max-width: 100%;
 			transition: all 1s;
-			opacity: .8;
+			opacity: .9;
+			background: $white;
 		}
 	.wrap {
 		.logo {
@@ -41,7 +42,6 @@ header {
 					float: left;
 					text-align: center;
 					font-size: 1.6rem;
-					// width: calc(100% / 7);
 					padding-left: 20px;
 					font-weight: 700;
 				}
@@ -50,10 +50,57 @@ header {
 	}
 }
 
-.scrolling {
-	background: $white;
+.hamburger {
+	display: none;
+	position: fixed;
+	z-index: 6;
+	top: 25px;
+	right: 5%;
+	height: 30px;
+	width: 30px;
+	margin: 0;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
 }
 
-.opacity {
-	opacity: .5;
+.hamburger span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: $red;
+	border-radius: 9px;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.hamburger .one {
+  	top: 0px;
+}
+
+.hamburger .two {
+  	top: 10px;
+}
+
+.hamburger .three {
+  	top: 20px;
+}
+
+.hamburger.active span:nth-child(1) {
+  	top: 10px;
+  	transform: rotate(135deg);
+  	background: $red;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+  background: $red;
 }

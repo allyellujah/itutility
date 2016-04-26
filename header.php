@@ -20,6 +20,11 @@
         <img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="ITUtility logo">
       </a>
     </div><!-- .logo -->
+    <div class="hamburger">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div><!-- .hamburger -->
     <?php get_template_part('nav'); ?>
   </div><!-- /.wrapper -->
 </header><!--/.header-->

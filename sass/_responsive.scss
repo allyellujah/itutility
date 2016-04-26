@@ -1,0 +1,430 @@
+@media (max-width: 1156px) {
+	section.about {
+		// float left for mockup and gear points
+		.layout {
+			padding: 3% 3% 1%;
+		}
+		.mockupCont {
+			position: static;
+			width: 50%;
+		}
+		.features {
+			padding: 0;
+			padding-right: 2%;
+			margin: 0 auto;
+			.feature:nth-child(odd),
+			.feature:nth-child(even) {
+				width: 50%;
+				float: left;
+				padding: 0;
+				.gears {
+					float: right;
+					width: 8%;
+				}
+				.content {
+					width: 92%;
+					float: right;
+					padding: 0;
+					text-align: left;		
+				}
+			}
+		}
+	}
+}
+// end of max-width: 1156px
+
+@media (max-width: 1103px) {
+	section.benefits {
+		.content {
+			padding-left: 5px; 
+		}
+	}
+
+}
+// end of max-width: 1103px
+
+@media (max-width: 1075px) {
+	section.benefits {
+		.content {
+			width: 100%;
+		}
+		.cloud {
+			display: none;
+		}
+	}
+}
+// end of max-width: 1075px
+
+@media (max-width: 1050px) {
+	//switch to hamburger menu
+	.hamburger {
+		display: block;
+	}
+
+	section,
+	.slider,
+	.testimonials,
+	.wrapper {
+		padding-top: 80px;
+	}
+
+	body.page {
+		.wrapper {
+			padding: 80px 5% 10px;
+		}
+	}
+
+	article.post {
+		padding-top: 80px;
+	}
+
+	header {
+		.wrap {
+			.logo {
+				img {
+					height: 80px;
+				}
+			}
+			nav {
+				right: 110%;
+				display: none;
+				transition: 1s all;
+				width: 100%;
+				padding-top: 0;
+				ul {
+					height: 100vh;
+					li {
+						float: none;
+						height: 12%;
+						text-transform: uppercase;
+					}
+				}
+			}
+			nav.active {
+				left: 0;
+				display: block;
+			}
+		}
+	}
+
+}
+// end of max-width: 1050px
+
+@media (max-width: 900px) {
+	.slider {
+		.carousel-cell {
+			.contentOverlay {
+				.headline {
+					font-size: 3rem;
+				}
+				p {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+	section.about {
+		.partner {
+			p {
+				width: 100%;
+			}
+			button {
+				float: none;
+				width: 30%;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+	section.products {
+		.list {
+			.product {
+				width: 33.3%;
+			}
+		}
+	}
+	section.testimonials {
+		padding-bottom: 10%;
+		.main-carousel {
+			.carousel-cell {
+				.card {
+					width: 80%;
+					.img {
+						float: none;
+						width: 100%;
+						img {
+							display: block;
+							margin: 0 auto;
+						}
+					}
+					blockquote {
+						float: none;
+						width: 100%;
+					}
+				}
+				.src, 
+				.company {
+					text-align: right;
+					padding-right: 2%;
+				}
+			}
+			.flickity-page-dots {
+				bottom: 0;
+			}
+		}
+	}
+	section.contact {
+		.info {
+			padding-top: 0;
+			.item {
+				width: 100%;
+			}
+		}
+	}
+}
+// end of max-width: 900px
+
+@media (max-width: 800px) {
+	section.about {
+		.features {
+			.feature:nth-child(odd),
+			.feature:nth-child(even) {
+				width: 100%;
+			}
+		}
+	}
+	section.contact {
+		h2 {
+			margin: 0;
+			padding-bottom: 80px;
+		}
+		form {
+			width: 95%;
+			input[type=email],input[type=text] {
+				width: 45%;
+				float: left;
+				margin: 2.5%;
+			}
+			input[type=submit], textarea {
+				width: 95%;
+				float: none;
+				margin: 1% 2.5%;
+			}
+		}
+	}
+}
+// end of max-width: 800px
+
+@media (max-width: 750px) {
+	section.testimonials {
+		.main-carousel {
+			.carousel-cell {
+				.card {
+					width: 100%;
+					padding: 0 2%;
+				}
+			}
+		}
+	}
+}
+// end of max-width: 750px
+
+@media (max-width: 700px) {
+	.slider {
+		.carousel-cell {
+			.contentOverlay {
+				left: 2%;
+				bottom: -2%;
+				color: $black;
+				text-shadow: none;
+				.headline {
+					background: $blue;
+					color: $white;
+					display: inline-block;
+					padding: 10px;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	section.products {
+		.list {
+			.product {
+				.imgContainer {
+					img {
+						max-height: 80px;
+					}
+				}
+			}
+		}
+	}
+	section.about {
+		button.partner {
+			top: 20px;
+		}
+	}
+}
+// end of max-width: 700px
+
+@media (max-width: 620px) {
+	.slider {
+		.carousel-cell {
+			.contentOverlay {
+				bottom: -5%;
+				.headline {
+					background: none;
+					padding: 0;
+					color: $black;
+				}
+			}
+		}
+	}
+	section.contact {
+		h2 {
+			padding-bottom: 40px;
+		}
+		form {
+			width: 100%;
+			input[type=email],input[type=text] {
+				width: 95%;
+				float: none;
+				margin: 1% 2.5%;
+			}
+		}
+	}
+	footer {
+		padding: 0;
+		.copy,
+		.top {
+			float: none;
+			text-align: center;
+		}
+	}
+}
+// end of max-width: 620px
+
+@media (max-width: 580px) {
+	.slider {
+		.carousel-cell {
+			.contentOverlay {
+				bottom: 0;
+				.headline {
+					font-size: 2rem;
+				}
+				p {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+	section.about {
+		button.partner {
+			top: 0;
+		}
+		.partner {
+			button {
+				width: 50%;
+			}
+		}
+	}
+	section.contact {
+		background: none;
+	}
+}
+// end of max-width: 580px
+
+@media (max-width: 540px) {
+	.slider {
+		.carousel-cell {
+			.contentOverlay {
+				bottom: 5%;
+			}
+		}
+	}
+	section.blog {
+		.imgContainer {
+			img {
+				display: block;
+			}
+			h3 {
+				margin: 0;
+				position: static;
+			}
+		}
+	}
+	#comments {
+		.wrapper {
+			input[type=submit] {
+				width: 100%;
+			}
+		}
+	}
+}
+// end of max-width: 540px
+
+@media (max-width: 520px) {
+	.slider {
+		.carousel-cell {
+			.contentOverlay {
+				bottom: 10%;
+			}
+		}
+	}
+	section.products {
+		.list {
+			.product {
+				width: 50%;
+			}
+		}
+	}
+}
+// end of max-width: 520px
+
+@media (max-width: 480px) {
+	.slider {
+		.carousel-cell {
+			.contentOverlay {
+				bottom: 15%;
+			}
+		}
+	}
+	section.about {
+		.partner {
+			button {
+				width: 80%;
+			}
+		}
+	}
+	footer {
+		.copy {
+			a {
+				display: block;
+			}
+		}
+	}
+}
+// end of max-width: 480px
+
+@media (max-width: 400px) {
+	header {
+		.wrap {
+			.logo {
+				width: 50%;
+			}
+			nav {
+				width: 50%;
+			}
+		}
+	}
+	section.products {
+		.list {
+			.product {
+				.imgContainer {
+					img {
+						max-height: 50px;
+					}
+				}
+			}
+		}
+	}
+}
