@@ -50,7 +50,7 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Raleway:300,700,400,PT+Sans');
 
-	wp_enqueue_style('flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.min.css');
+	// wp_enqueue_style('flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.min.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');

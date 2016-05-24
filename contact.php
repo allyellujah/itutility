@@ -1,6 +1,6 @@
 <?php $contact = new WP_Query(array(
             'posts_per_page'=> 1,
-            'post_type'=> 'contact'
+            'post_type'=> 'contact_info'
           )); ?>
     <?php if($contact-> have_posts()): ?>
 

@@ -13,6 +13,7 @@ SLIDER SECTION BEGINS
   <?php while($slider-> have_posts()): ?> 
     <?php $slider-> the_post(); ?>
       <div class="carousel-cell">
+        <div class="filter"></div>
       <?php $image = get_field('slider_image'); ?>
       <img src="<?php echo $image['sizes']['large']; ?>" class="sliderImage" alt="">
       <div class="contentOverlay">

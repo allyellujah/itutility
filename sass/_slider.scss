@@ -2,7 +2,7 @@
 	padding: 0;
 	position: relative;
 	padding-top: 120px;
-	height: 80vh;
+	height: 95vh;
 	h2::before {
 		content: '';
 		padding: 0;
@@ -14,14 +14,22 @@
 		img {
 			width: 100%;
 		}
+		.filter {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: $white;
+			opacity: .4;
+		}
 		.contentOverlay {
 			position: absolute;
 			z-index: 200;
 			bottom: 20%;
 			left: 5%;
-			color: $white;
+			color: $blue;
 			padding: 10px;
-			text-shadow: 0 0 4px $black;
 			.headline {
 				font-size: 4rem;
 				width: auto;

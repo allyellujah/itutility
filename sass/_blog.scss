@@ -8,6 +8,8 @@ section.blog {
 		position: relative;
 		img {
 			width: 100%;
+			display: block;
+			margin: 0 auto;
 		}
 		h3 {
 			font-size: 2rem;
@@ -35,6 +37,8 @@ article.post {
 		overflow: hidden;
 		img {
 			width: 100%;
+			display: block;
+			margin: 0 auto;
 		}
 	}
 	.entry-content {
@@ -57,6 +61,11 @@ section.entry-content {
 
 .wrapper.blog {
 	padding: 1%;
+}
+
+img.feature {
+	display: block;
+	margin: 0 auto;
 }
 
 .navigation {

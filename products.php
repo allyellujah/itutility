@@ -1,6 +1,6 @@
 <?php $products = new WP_Query(array(
             'posts_per_page'=> 1,
-            'post_type'=> 'products'
+            'post_type'=> 'products_section'
           )); ?>
     <?php if($products-> have_posts()): ?>
 
@@ -16,7 +16,7 @@ PRODUCTS SECTION BEGINS
     <?php the_content(); ?>
     <div class="list clearfix">
       <?php while(has_sub_fields('product')): ?>
-        <a href="/itutility/<?php the_sub_field('link'); ?>">
+        <a href="/products/<?php the_sub_field('link'); ?>">
           <div class="product">
             <?php $logo = get_sub_field('logo'); ?>
             <div class="imgContainer">

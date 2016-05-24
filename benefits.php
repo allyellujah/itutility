@@ -1,6 +1,6 @@
 <?php $benefits = new WP_Query(array(
             'posts_per_page'=> -1,
-            'post_type'=> 'benefits'
+            'post_type'=> 'benefits_section'
           )); ?>
     <?php if($benefits-> have_posts()): ?>
 
