@@ -50,7 +50,7 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Raleway:300,700,400,PT+Sans');
 
-	// wp_enqueue_style('flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.min.css');
+	// wp_enqueue_style('flickity', 'https://unpkg.com/flickity@1.2/dist/flickity.min.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -72,7 +72,7 @@ function hackeryou_scripts() {
 
     wp_enqueue_script(
   	'flickity',
-  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js",
+  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://unpkg.com/flickity@1.2/dist/flickity.pkgd.min.js",
   	array( 'jquery' ), //dependencies
   	null, //version number
   	true //load in footer
